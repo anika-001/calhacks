@@ -44,7 +44,8 @@
 
 .output{
     margin:10vh;
-    min-height:50vh;
+    // min-height:50vh;
+    height:100%;
     width: 80vw;
     background-color: transparentize(white, 0.8);
     backdrop-filter: blur(20px);

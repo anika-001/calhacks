@@ -5,6 +5,7 @@ import { ForumComponent } from './forum/forum.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
+import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   // {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'asltranslator',
     component: ASLtranslatorComponent
+  },
+  {
+    path: 'video',
+    component: VideosComponent
   },
   {
     path: 'signin',
