@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ASLtranslatorComponent } from './asltranslator/asltranslator.component';
 import { ForumComponent } from './forum/forum.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
   // {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'asltranslator',
     component: ASLtranslatorComponent
+  },
+  {
+    path: 'signin',
+    component: SigninComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   }
 ];
 

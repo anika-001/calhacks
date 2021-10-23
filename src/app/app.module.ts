@@ -7,6 +7,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ForumComponent } from './forum/forum.component';
 import { ASLtranslatorComponent } from './asltranslator/asltranslator.component';
 import { VideosComponent } from './videos/videos.component';
+import { environment } from 'src/environments/environment';
+import { SigninComponent } from './signin/signin.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component'
 
 @NgModule({
   declarations: [
@@ -14,11 +23,23 @@ import { VideosComponent } from './videos/videos.component';
     NavbarComponent,
     ForumComponent,
     ASLtranslatorComponent,
-    VideosComponent
+    VideosComponent,
+    SigninComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    FormsModule,
+    ReactiveFormsModule,
+    //FontAwesomeModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    MatSelectModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
