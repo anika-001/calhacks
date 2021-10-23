@@ -10,12 +10,16 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { MapsComponent } from './maps/maps.component';
+import { Map1Component } from './map1/map1.component';
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
+    MapsComponent,
+    Map1Component
   ],
   imports: [
     BrowserModule,
