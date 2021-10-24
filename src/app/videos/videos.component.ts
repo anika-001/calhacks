@@ -18,7 +18,7 @@ export class VideosComponent implements OnInit {
   Video(){
     this.video= true;
     // this.vid;
-    this.vid = (this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/z4sN05-xIs4?autoplay=1"));
+    this.vid = (this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/YbkOrbuvFsc?autoplay=1"));
     console.log(this.vid);
   }
   submit(){

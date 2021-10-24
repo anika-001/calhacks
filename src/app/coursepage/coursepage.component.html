@@ -2,42 +2,55 @@
     <div class="coursesplate">
         <div class="courses">
             <div class="title">
-                COMPUTER SCIENCE
+                PTSD
             </div>
             <div class="course">
-                <img style="height:10vw;"src="../../assets/images/tumbnail.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/PTSD1.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/PTSD2.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/PTSD3.jpg">
             </div>
             <!-- <hr> -->
         </div>
         <div class="courses">
             <div class="title">
-                COMPUTER SCIENCE
+                DEPRESSION
             </div>
             <div class="course">
-                <img style="height:10vw;"src="../../assets/images/tumbnail.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/Depression1.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/Depression2.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/Depression3.jpg">
             </div>
             <!-- <hr> -->
         </div>
         <div class="courses">
             <div class="title">
-                COMPUTER SCIENCE
+                SOCIAL ANXIETY
             </div>
             <div class="course">
-                <img style="height:10vw;"src="../../assets/images/tumbnail.jpg">
-            </div>
-            <!-- <hr> -->
-        </div>
-        <div class="courses">
-            <div class="title">
-                COMPUTER SCIENCE
-            </div>
-            <div class="course">
-                <img style="height:10vw;"src="../../assets/images/tumbnail.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/SA1.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/SA2.jpg">
+                <img (click)="open()"style="height:10vw;" src="../../assets/images/SA3.jpg">
             </div>
             <!-- <hr> -->
         </div>
     </div>
-    <div class="courseinfo">
-
+    <div *ngIf="courseinfo" class="courseinfo">
+        <img (click)="close()" class="close" src="https://img.icons8.com/ios-glyphs/30/000000/macos-close.png"/>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;" >
+            <div class="Cinfo">
+                <h1>PTSD</h1>
+                What is posttraumatic stress disorder (PTSD)? PTSD's a type of mental health condition that can happen after experiencing a traumatic event. This video covers the definition, diagnostic criteria, associated biological factors, and symptoms of PTSD. 
+            </div>
+            <div class="prof">
+                <img style="height:20vh;"src="../../assets/images/Professor.jpg">
+                <div>
+                   Reduced student truancy rate by 25% <br>
+                   Developed engaging curricula for students ages 7-15.<br>
+                   Taught coping skills to 3 young individuals.<br>
+                   PhD in Psycology from Harvard University.<br>
+                </div>
+                <img style="height:15vh"src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-rating-success-flatart-icons-lineal-color-flatarticons-2.png"/>
+            </div>
+        </div>
     </div>
 </div>
