@@ -1,23 +1,32 @@
 <nav class="navbar">
-   
+
     <div class="links">
-        <div class="nav-bar-item" >
-            <div class="nav-bar-item-text">Hello</div>
+        <div class="nav-bar-item">
+            <div class="nav-bar-item-text" routerLink="/home">Portals</div>
+        </div>
+        <div class="nav-bar-item">
+            <div class="nav-bar-item-text" routerLink="/home">Resources</div>
         </div>
         <!-- <div class="nav-bar-item" routerLink={{y.link}} *ngFor="let y of navdata">
             <div class="nav-bar-item-text">{{y.name}}</div>
         </div> -->
         <div class="logo" routerLink="/home">Aikyam</div>
-        <div class="nav-bar-item" >
-            <div class="nav-bar-item-text">Hello</div>
+        <div class="nav-bar-item">
+            <div class="nav-bar-item-text" routerLink="/home">Forum</div>
         </div>
+        <div class="nav-bar-item">
+            <div class="nav-bar-item-text" routerLink="/home">Courses</div>
+        </div>
+
+        
         <div>
-            
-            <div class="signout" id="signout">
+            <div class = "points cutom-btn btn-4">
+                {{profile.payload.data().score}}
+            </div>
+            <div class="signout" id="signout" (click) = "logout()">
                 Sign Out
             </div>
-            <!-- <a *ngIf="userIsLogged" class="btn btn-block btn-primary" (click)="ngAuthService.SignOut()" style="margin-bottom: 10px;background-color:yellowgreen;border: none;"> -->
-              <!-- </a> -->
         </div>
+        
     </div>
 </nav>

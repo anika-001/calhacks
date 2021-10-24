@@ -40,10 +40,15 @@ export class AuthService {
       name: user.name,
       phone: user.phone,
       role: user.role,
+      score: 0
     })
   }
 
   getprofile(useruid:any) {
     return this.db.collection("Users").doc(useruid).snapshotChanges();
+  }
+
+  logout() {
+    return this.af.signOut();
   }
 }
