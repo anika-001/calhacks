@@ -1,0 +1,137 @@
+
+.caption span.border {
+    background-color: rgb(66, 65, 65);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.caption{
+    text-align: center;
+}
+.toptrans {
+    background-image: linear-gradient( to right, #000000
+    ,#474747);
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: aqua;
+}
+.content{
+    height: 50vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tagline{
+    font-family: country;
+    color: white;
+    font-size: 200%;
+}
+
+
+  
+
+
+  
+  .card {
+    text-align: center;
+    position: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: border-box;
+    background-color: #D1E8E2;
+  }
+  
+  .card>hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+  }
+  
+  .card-header {
+    margin-bottom: 0;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    background-color: #fff;
+  }
+  
+
+
+  .card-profile-image {
+    position: relative;
+  }
+  
+  .card-profile-image img {
+    position: absolute;
+    left: 50%;
+    max-width: 130px;
+    transition: all .15s ease;
+    transform: translate(-50%, -30%);
+    // border-radius: .375rem;
+    border-radius: 50%;
+  }
+  
+  .card-profile-image img:hover {
+      color: #000;
+    transform: translate(-50%, -33%);
+  }
+  
+  .card-profile-stats {
+    padding: 1rem 0;
+  }
+  
+  .card-profile-stats>div {
+    margin-right: 1rem;
+    padding: .875rem;
+    text-align: center;
+  }
+  
+  .card-profile-stats>div:last-child {
+    margin-right: 0;
+  }
+  .container{
+      width: 80%;
+      height:70%;
+  }
+  .mainclass{
+    background-image: linear-gradient( to right, #000000
+    ,#474747);
+   
+  }
+  .topic1{
+    // margin-top: 80px;
+    font-size: 50px;
+    padding-top: 30px;
+      text-align: center;
+      margin-bottom: 45px;
+      font-family:country;
+      color: white;
+      font-weight: bolder;
+      
+  }
+
+
+
+ 
+ 
+  
+
+  
+
+  

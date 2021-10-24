@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -10,13 +9,17 @@ import { VideosComponent } from './videos/videos.component';
 import { environment } from 'src/environments/environment';
 import { SigninComponent } from './signin/signin.component';
 import { AngularFireModule } from '@angular/fire/compat';
-import {AngularFireAuthModule} from '@angular/fire/compat/auth';
-import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component'
-
+import { InformationComponent } from './information/information.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { WebinarComponent } from './webinar/webinar.component';
+import { PortalComponent } from './portal/portal.component';
+import { ProfileComponent } from './profile/profile.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,11 @@ import { HomeComponent } from './home/home.component'
     ASLtranslatorComponent,
     VideosComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
+    InformationComponent,
+    WebinarComponent,
+    PortalComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,8 @@ import { HomeComponent } from './home/home.component'
     AngularFireAuthModule,
     AngularFirestoreModule,
     MatSelectModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
