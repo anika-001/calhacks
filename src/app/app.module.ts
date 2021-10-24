@@ -18,6 +18,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { MapsComponent } from './maps/maps.component';
 import { Map1Component } from './map1/map1.component';
+import { MhomeComponent } from './mhome/mhome.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { Map1Component } from './map1/map1.component';
     SigninComponent,
     HomeComponent,
     MapsComponent,
-    Map1Component
+    Map1Component,
+    MhomeComponent
   ],
   imports: [
     BrowserModule,

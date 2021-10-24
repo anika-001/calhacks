@@ -8,6 +8,7 @@ import { SigninComponent } from './signin/signin.component';
 import {MapsComponent} from './maps/maps.component';
 import { Map1Component } from './map1/map1.component';
 import { VideosComponent } from './videos/videos.component';
+import { MhomeComponent } from './mhome/mhome.component';
 
 const routes: Routes = [
   // {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'map1',
     component: Map1Component
+  },
+  {
+    path: 'mhome',
+    component: MhomeComponent
   }
 ];
 
