@@ -11,6 +11,9 @@ export const environment = {
     storageBucket: "calhacks-a7dbf.appspot.com",
     messagingSenderId: "233023447701",
     appId: "1:233023447701:web:dbdc75a9a046736eccb19c"
+  },
+  mapbox: {
+    accessToken: 'pk.eyJ1IjoiaHRzLWFubiIsImEiOiJja3YzbzJzMjg0OXV5MnVzNzNhaG05bnY5In0.602bUXxRuZ0ExdSlixdXQQ'
   }
 };
 

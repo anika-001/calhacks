@@ -16,10 +16,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { MapsComponent } from './maps/maps.component';
+import { Map1Component } from './map1/map1.component';
+import { MhomeComponent } from './mhome/mhome.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component'
 import { InformationComponent } from './information/information.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ManasthitihomeComponent } from './manasthitihome/manasthitihome.component';
+import { ManasthitinavbarComponent } from './manasthitinavbar/manasthitinavbar.component';
+import { Game1Component } from './game1/game1.component';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
 // import { ProfileComponent } from './profile/profile.component'
@@ -36,13 +42,19 @@ import { SigngameoneComponent } from './signgameone/signgameone.component'
     VideosComponent,
     SigninComponent,
     HomeComponent,
+    MapsComponent,
+    Map1Component,
+    MhomeComponent,
     PracticetogestureComponent,
     CoursepageComponent,
+    InformationComponent,
+    ManasthitihomeComponent,
+    ManasthitinavbarComponent,
+    Game1Component
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
-    InformationComponent,
-    WebinarComponent,
+
     PortalComponent,
     ProfileComponent,
     SigngameoneComponent
