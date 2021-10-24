@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {WebcamModule} from 'ngx-webcam';
+import { WebcamModule } from 'ngx-webcam';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -30,6 +30,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
 // import { ProfileComponent } from './profile/profile.component'
+import { WebinarComponent } from './webinar/webinar.component';
+import { PortalComponent } from './portal/portal.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SigngameoneComponent } from './signgameone/signgameone.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +55,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
+
+    PortalComponent,
+    ProfileComponent,
+    SigngameoneComponent
   ],
   imports: [
     BrowserModule,
