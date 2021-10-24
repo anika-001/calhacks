@@ -9,6 +9,7 @@ import { PortalComponent } from './portal/portal.component';
 import { SigninComponent } from './signin/signin.component';
 import { WebinarComponent } from './webinar/webinar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   // {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'asltranslator',
     component: ASLtranslatorComponent
+  },
+  {
+    path: 'video',
+    component: VideosComponent
   },
   {
     path: 'signin',

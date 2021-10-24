@@ -1,0 +1,120 @@
+.main{
+    // height:100%;
+    max-width: 100vw;
+    // margin: 5vw;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: black;
+    justify-content: space-evenly;
+
+}
+.vidplay{
+    // margin:1vw;
+    width:80vw;
+    height:70vh;
+    // background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: transparentize(white, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+.videos{
+    margin:7vh;
+    width:80vw;
+    height:100%;
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: transparentize(white, 0.8);
+    backdrop-filter: blur(20px);
+   }
+.videos:hover{
+    border: 2px solid #116466;
+}
+.video{
+    margin:1vw;
+    height:20vh;
+    width:20vw;
+    cursor:pointer;
+}
+.thumbnail{
+    height:70vh;
+    width:80vw;
+    cursor: pointer;
+}
+.search{
+    // margin:2vw;
+}
+.searchBox {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    transform:  translate(0%,50%);
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 5vh;
+    border-radius: 40px;
+    padding: 2vh;
+    // margin:1vw;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+//   color : #acb6e5;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #acb6e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
