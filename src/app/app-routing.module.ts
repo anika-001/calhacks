@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ASLtranslatorComponent } from './asltranslator/asltranslator.component';
 import { ForumComponent } from './forum/forum.component';
@@ -6,6 +6,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { VideosComponent } from './videos/videos.component';
+import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
+import { CoursepageComponent } from './coursepage/coursepage.component';
 
 const routes: Routes = [
   // {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'coursepage',
+    component: CoursepageComponent
+  },
+  {
+    path: 'practicetogesture',
+    component: PracticetogestureComponent
   }
 ];
 

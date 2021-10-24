@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {WebcamModule} from 'ngx-webcam';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,7 +15,9 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
+import { CoursepageComponent } from './coursepage/coursepage.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HomeComponent } from './home/home.component'
     ASLtranslatorComponent,
     VideosComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
+    PracticetogestureComponent,
+    CoursepageComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import { HomeComponent } from './home/home.component'
     AngularFireAuthModule,
     AngularFirestoreModule,
     MatSelectModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    WebcamModule
   ],
   providers: [],
   bootstrap: [AppComponent]
