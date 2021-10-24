@@ -26,6 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ManasthitihomeComponent } from './manasthitihome/manasthitihome.component';
 import { ManasthitinavbarComponent } from './manasthitinavbar/manasthitinavbar.component';
 import { Game1Component } from './game1/game1.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
 // import { ProfileComponent } from './profile/profile.component'
@@ -50,7 +51,7 @@ import { SigngameoneComponent } from './signgameone/signgameone.component'
     InformationComponent,
     ManasthitihomeComponent,
     ManasthitinavbarComponent,
-    Game1Component
+    Game1Component,
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
