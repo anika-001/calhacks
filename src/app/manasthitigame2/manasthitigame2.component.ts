@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as $ from 'jquery';
+import firebase from '@firebase/app-compat';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-manasthitigame2',
@@ -9,10 +12,11 @@ import * as $ from 'jquery';
 })
 export class Manasthitigame2Component implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private db: AngularFirestore, private router: Router, private as: AuthService) {}
 
   page1: boolean = true;
   showcont:boolean = false;
+  userID: any;
   page1cnt: number = 0;
   locations1 = [
     { x: '20', y: '35' },
@@ -51,8 +55,11 @@ export class Manasthitigame2Component implements OnInit {
   ]
 
   ngOnInit(): void {
-
-
+    this.as.getUserState()
+    .subscribe(user => {
+      if(user == null){this.router.navigate(['/signin'])}
+      this.userID = user.uid;
+    })
   }
 
   click(x: any) {
@@ -70,6 +77,12 @@ export class Manasthitigame2Component implements OnInit {
   toggle(){
     this.page1 = !this.page1;
     console.log(this.page1+" Page1");
+  }
+
+  gotohome(){
+    var increment = firebase.firestore.FieldValue.increment(10);
+    this.db.collection("Users").doc(this.userID).update({score: increment})
+    this.router.navigate(['/mentally/activities'])
   }
 
 }

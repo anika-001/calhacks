@@ -35,7 +35,12 @@ import { WebinarComponent } from './webinar/webinar.component';
 import { PortalComponent } from './portal/portal.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
-import { ShomeComponent } from './shome/shome.component'
+
+import { ManaInfoComponent } from './mana-info/mana-info.component'
+import { GesturesComponent } from './gestures/gestures.component'
+import { ShomeComponent } from './shome/shome.component';
+import { MactivitiesComponent } from './mactivities/mactivities.component';
+import { SactivitiesComponent } from './sactivities/sactivities.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +67,12 @@ import { ShomeComponent } from './shome/shome.component'
     PortalComponent,
     ProfileComponent,
     SigngameoneComponent,
-    ShomeComponent
+    ShomeComponent,
+    ManaInfoComponent,
+    GesturesComponent,
+    ShomeComponent,
+    MactivitiesComponent,
+    SactivitiesComponent
   ],
   imports: [
     BrowserModule,

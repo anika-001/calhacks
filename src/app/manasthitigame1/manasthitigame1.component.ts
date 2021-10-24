@@ -3,6 +3,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import firebase from '@firebase/app-compat';
 import * as $ from 'jquery';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-manasthitigame1',
@@ -28,9 +29,20 @@ export class Manasthitigame1Component implements OnInit {
   minus = 0;
   generated: boolean = false;
   score: any = 0;
-  constructor(private db: AngularFirestore, private router: Router) { }
+  userID: any;
+
+  constructor(private db: AngularFirestore, private router: Router, private as: AuthService) { }
 
   ngOnInit(): void {
+    this.as.getUserState()
+    .subscribe(user => {
+      if(user == null){this.router.navigate(['/signin'])}
+      this.userID = user.uid;
+      // this.as.getprofile(this.userID).subscribe(res => {
+      //   this.profile = res;
+      //   console.log(this.profile.payload.data())
+      // })
+    })
     this.gettopics();
   }
 
@@ -103,11 +115,8 @@ export class Manasthitigame1Component implements OnInit {
   // }
 
   check(x: any) {
-    if(this.donex.length == 9){
-      this.gameend = true;
-    }
     this.picked = false;
-    var increment;
+    var increment;;
     if (x.toString() == (this.questionnow.payload.data().Answer).split("o")[1]) {
       this.plus = (this.cury + 1) * 200 * Number(this.questionnow.payload.data().Multiplier)
       // $(".correct").css("display", "block");
@@ -129,11 +138,20 @@ export class Manasthitigame1Component implements OnInit {
       setInterval(function () { $(".npoints").css("display", "none"); clearInterval() }, 3000);
 
     }
+    if(this.donex.length == 9){
+      increment = firebase.firestore.FieldValue.increment(this.score);
+      this.db.collection("Users").doc(this.userID).update({score: increment})
+      this.gameend = true;
+    }
     // this.db.collection("Rooms").doc(localStorage.getItem("code")).collection("Players").doc(localStorage.getItem("name")).update({ "Score": increment })
     this.questionnow = {};
     this.optionsnow = [];
     // this.answer();
 
+  }
+
+  gotohome(){
+    this.router.navigate(['/mentally/activities']);
   }
 
   // @HostListener('window:beforeunload', ['$event'])
