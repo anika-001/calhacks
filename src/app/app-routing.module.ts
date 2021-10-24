@@ -24,6 +24,7 @@ import { SigngameoneComponent } from './signgameone/signgameone.component';
 import { ShomeComponent } from './shome/shome.component';
 import { MactivitiesComponent } from './mactivities/mactivities.component';
 import { ManaInfoComponent } from './mana-info/mana-info.component';
+import { SactivitiesComponent } from './sactivities/sactivities.component';
 
 const routes: Routes = [
   // {
@@ -91,11 +92,15 @@ const routes: Routes = [
     component: ProfileComponent
   },
   {
-    path: 'signgame2',
+    path: 'signs/activities',
+    component: SactivitiesComponent
+  },
+  {
+    path: 'signs/signgame2',
     component: Signstranslatorgame2Component
   },
   {
-    path: 'signgameone',
+    path: 'signs/signgameone',
     component: SigngameoneComponent
 
   },
@@ -111,6 +116,7 @@ const routes: Routes = [
     path: 'mentally/activities',
     component: MactivitiesComponent
   },
+
   {
     path: 'manainfo',
     component: ManaInfoComponent

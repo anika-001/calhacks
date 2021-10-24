@@ -40,7 +40,8 @@ import { ManaInfoComponent } from './mana-info/mana-info.component'
 import { GesturesComponent } from './gestures/gestures.component'
 import { ShomeComponent } from './shome/shome.component';
 import { MactivitiesComponent } from './mactivities/mactivities.component';
-import { SactivitiesComponent } from './sactivities/sactivities.component'
+import { SactivitiesComponent } from './sactivities/sactivities.component';
+import { SnavbarComponent } from './snavbar/snavbar.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +73,8 @@ import { SactivitiesComponent } from './sactivities/sactivities.component'
     GesturesComponent,
     ShomeComponent,
     MactivitiesComponent,
-    SactivitiesComponent
+    SactivitiesComponent,
+    SnavbarComponent
   ],
   imports: [
     BrowserModule,

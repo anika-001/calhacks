@@ -1,81 +1,138 @@
 <div class="info-container">
+    <app-snavbar></app-snavbar>
     <div>
         <h1 class="topic1"> ASL Gestures</h1>
     </div>
 
-    <div>
-
-
-        <div class="container">
-            <div class="card-group">
-                <div class="card">
-                    <img src="../../assets/images/thanks.png" class="card-img-top" alt="...">
-                </div>
-
-
-                <div class="card">
-                    <img src="../../assets/images/animal.png" class="card-img-top" alt="...">
-                </div>
-
-
-                <div class="card">
-                    <img src="../../assets/images/money.png" class="card-img-top" alt="...">
-
-                </div>
-
+    <div style = "display: flex;">
+        <div class = "options">
+            <div class = "optionsspace">
+                <div class = "cell" [ngClass] = "{
+                    'cellhl': picked == 1
+                }" (click) = pick(1)>American</div>
+                <div class = "cell" [ngClass] = "{
+                    'cellhl': picked == 2
+                }" (click) = pick(2)>British</div>
+                <div class = "cell" [ngClass] = "{
+                    'cellhl': picked == 3
+                }" (click) = pick(3)>Indian</div>
             </div>
-
+        </div>
+        <div style="flex-basis: 100%;"  *ngIf = "picked == 2">
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="../../assets/images/thanks.png" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/animal.png" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/money.png" class="card-img-top" alt="...">
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="../../assets/images/camera.png" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/chocolate.png" class="card-img-top" alt="...">
+    
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/congratulations.png" class="card-img-top" alt="...">
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="../../assets/images/environment.png" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/family.png" class="card-img-top" alt="...">
+    
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/burger.png" class="card-img-top" alt="...">
+                    </div>
+    
+                </div>
+    
+            </div>
         </div>
 
-
-
-        <div class="container">
-            <div class="card-group">
-                <div class="card">
-                    <img src="../../assets/images/camera.png" class="card-img-top" alt="...">
+        <div style="flex-basis: 100%;"  *ngIf = "picked == 1">
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="../../assets/images/b.JPG" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/c.JPG" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/D.JPG" class="card-img-top" alt="...">
+    
+                    </div>
                 </div>
-
-
-                <div class="card">
-                    <img src="../../assets/images/chocolate.png" class="card-img-top" alt="...">
-
-                </div>
-
-
-                <div class="card">
-                    <img src="../../assets/images/congratulations.png" class="card-img-top" alt="...">
-                </div>
-
             </div>
-
         </div>
 
-        <div class="container">
-            <div class="card-group">
-                <div class="card">
-                    <img src="../../assets/images/environment.png" class="card-img-top" alt="...">
+        <div style="flex-basis: 100%;" *ngIf = "picked == 3">
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="../../assets/images/A_ind.JPG" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/B_ind.JPG" class="card-img-top" alt="...">
+                    </div>
+    
+    
+                    <div class="card">
+                        <img src="../../assets/images/c_ind.JPG" class="card-img-top" alt="...">
+    
+                    </div>
+    
                 </div>
-
-
-                <div class="card">
-                    <img src="../../assets/images/family.png" class="card-img-top" alt="...">
-
-                </div>
-
-
-                <div class="card">
-                    <img src="../../assets/images/burger.png" class="card-img-top" alt="...">
-                </div>
-
+    
             </div>
-
-        </div>
     </div>
 
     <div>
         <h1 class="topic1"> </h1>
     </div>
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <!-- <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Designed By Team🙌</p>
-    </div>
+    </div> -->
 </div>

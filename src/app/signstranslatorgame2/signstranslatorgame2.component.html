@@ -1,32 +1,47 @@
 <div class="main">
+    <app-snavbar style="margin-left: -100vw;"></app-snavbar>
     <div class="quiz">
-        <div>
+        <div class = "scoreandquestions">
             <h1 style="color: white;">QUESTION {{questionnumber}} of 5</h1>
+            <h1 style="color: white;">SCORE {{score}} </h1>
         </div>
         <div class="questions">
             <div class="question">
                 <img style="height: 55vh;" src="{{questions[questionnumber - 1].payload.doc.data().Question}}">
             </div>
             <div class="options">
-                <div class="option">
+                <div class="option" (click) = "next('o1')" [ngClass]="{
+                    'bord': picked == 'o1'
+                }">
                     {{questions[questionnumber - 1].payload.doc.data().o1}}
                 </div>
-                <div class="option">
+                <div class="option" (click) = "next('o2')" [ngClass]="{
+                    'bord': picked == 'o2'
+                }">
                     {{questions[questionnumber - 1].payload.doc.data().o2}}
                 </div>
-                <div class="option">
+                <div class="option" (click) = "next('o3')" [ngClass]="{
+                    'bord': picked == 'o3'
+                }">
                     {{questions[questionnumber - 1].payload.doc.data().o3}}
                 </div>
-                <div class="option">
+                <div class="option" (click) = "next('o4')" [ngClass]="{
+                    'bord': picked == 'o4'
+                }">
                     {{questions[questionnumber - 1].payload.doc.data().o4}}
                 </div>
             </div>
         </div>
         <div class="buttons">
-            <div class="dabuttons">
+            <div class="dabuttons" (click) = "gotonext()">
                 Next
             </div>
         </div>
         <!-- hellloooooooooooooooooooooooooooo -->
+    </div>
+    <div *ngIf = "gameend" class = "scoreboard">
+        <img style="position: absolute; width:40vw;" src="../../assets/images/yay.gif">
+        Score: {{score}}
+        <button type="button" class="success-button btn btn-info" style = "z-index: 99;" (click) = "gotohome()"> Go to home </button>
     </div>
 </div>

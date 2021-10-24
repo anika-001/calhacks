@@ -9,7 +9,12 @@ export class InformationComponent implements OnInit {
 
   constructor() { }
 
+  picked: any = 1;
+
   ngOnInit(): void {
   }
 
+  pick(num: any){
+    this.picked = num;
+  }
 }

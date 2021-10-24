@@ -32,7 +32,7 @@
     left: 0;
     width:100%;
     height:auto;
-    
+    min-height: 100vh;
     background: #a8d0e6;
     background-image: linear-gradient( to right, #000000
     ,#474747);
@@ -55,4 +55,23 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   transform: scale(0.9);
 }
 
+.options{
+  flex-basis: 20%;
+}
 
+.cell{
+  margin: 2vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: 200%;
+  cursor: pointer;
+  border-bottom: solid thin silver;
+}
+
+.cell:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cellhl{
+  background-color: grey;
+}
