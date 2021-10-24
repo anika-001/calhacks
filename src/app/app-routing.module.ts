@@ -12,7 +12,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { VideosComponent } from './videos/videos.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component';
-import { Game1Component } from './game1/game1.component';
+import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.component';
+import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
 
 const routes: Routes = [
   // {
@@ -65,7 +66,11 @@ const routes: Routes = [
   },
   {
     path: 'mentally/jeopardy',
-    component: Game1Component
+    component: Manasthitigame1Component
+  },
+  {
+    path: 'mentally/anatomy',
+    component: Manasthitigame2Component
   }
 ];
 
