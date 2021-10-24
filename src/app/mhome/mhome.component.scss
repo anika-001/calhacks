@@ -6,18 +6,18 @@
 }
 
 .images {
-    position: absolute;
+    
     top: 0;
     width: 100%;
-    height: 340vh;
+    height: 250vh;
 }
 .imgtop {
-    position: sticky;
-    height: 100vh;
+    position: fixed;
+    height: 130vh;
     width: 100%;
     top: 0;
     // left: 0;
-//    background-image: url("../../assets/images/mentalhealth2.jpg");
+   background-image: url("../../assets/images/mind.jpg");
     background-size: 100% 100%;
 }
 
@@ -26,16 +26,16 @@
     top: 0;
     margin-top: 10vh;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
 }
 .whatwedoimg {
-    height: 50vh;
+    // height: 50vh;
     color: white;
-//    background-image: url("../../assets/images/mentalhealthband.jpg");
+//    background-image: url("../../assets/images/b.jpg");
     background-size: 100% 100%;
     margin-top: 20vh;
     padding: 5%;
@@ -58,7 +58,7 @@
 }
 
 .infosec {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-color: white;
     // padding: 2%;
@@ -175,4 +175,15 @@
 .namespace{
     font-size: 200%;
     text-align: center;
+}
+
+.bgimg-1 {
+    background-image: url("../../assets/images/white.jpg");
+    height: 100vh;
+    width: 100%;
+    // opacity: 0.70;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
