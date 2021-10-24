@@ -10,15 +10,19 @@ import { VideosComponent } from './videos/videos.component';
 import { environment } from 'src/environments/environment';
 import { SigninComponent } from './signin/signin.component';
 import { AngularFireModule } from '@angular/fire/compat';
-import {AngularFireAuthModule} from '@angular/fire/compat/auth';
-import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component'
-
+import { InformationComponent } from './information/information.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { WebinarComponent } from './webinar/webinar.component';
+// import { PortalComponent } from './portal/portal.component';
+// import { ProfileComponent } from './profile/profile.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,11 @@ import { CoursepageComponent } from './coursepage/coursepage.component'
     SigninComponent,
     HomeComponent,
     PracticetogestureComponent,
-    CoursepageComponent
+    CoursepageComponent,
+    InformationComponent
+    // WebinarComponent,
+    // PortalComponent,
+    // ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +52,11 @@ import { CoursepageComponent } from './coursepage/coursepage.component'
     AngularFirestoreModule,
     MatSelectModule,
     NoopAnimationsModule,
+<<<<<<< HEAD
     WebcamModule
+=======
+    NgbModule
+>>>>>>> 4a9a62ab3a81767e631bb8480f317bafdaf1e3aa
   ],
   providers: [],
   bootstrap: [AppComponent]

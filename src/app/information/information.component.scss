@@ -1,0 +1,58 @@
+.topic1{
+  // margin-top: 80px;
+  font-size: 80px;
+  padding-top: 30px;
+    text-align: center;
+    margin-bottom: 45px;
+    font-family:celosia;
+    color: white;
+    font-weight: bold;
+    
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    //   top: 0;
+    //   height: 100%;
+    //   transition: all 0.6s ease-in-out;
+    /* margin-left: 200px; */
+    background-image: linear-gradient( to right, #000000
+      ,#474747);
+    right:0;
+    // width: 50%;
+  }
+
+  .info-container{
+    padding-top: 85px;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    width:100%;
+    height:auto;
+    
+    background: #a8d0e6;
+    background-image: linear-gradient( to right, #000000
+    ,#474747);
+	background-attachment: fixed;	
+	background-size: cover;
+}
+
+
+.card{
+margin: 20px;
+transition: transform .2s; 
+box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.card:hover{
+  
+  transform: scale(0.9);
+}
+
+
