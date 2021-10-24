@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signgameone',
@@ -8,7 +9,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 })
 export class SigngameoneComponent implements OnInit {
 
-  constructor(private db: AngularFirestore) { }
+  constructor(private db: AngularFirestore, private router: Router) { }
 
   questionnumber: any = 1;
   questions: any;
@@ -39,5 +40,9 @@ export class SigngameoneComponent implements OnInit {
       return;
     }
     this.questionnumber += 1;
+  }
+
+  gotohome(){
+    this.router.navigate(['/shome']);
   }
 }

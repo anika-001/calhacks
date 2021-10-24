@@ -103,8 +103,9 @@
     <div>
         <h1 class="main"></h1>
     </div>
-    <div *ngIf = "!gameend" class = "scoreboard">
-        Score: 100
+    <div *ngIf = "gameend" class = "scoreboard">
+        Score: {{score}}
+        <button type="button" class="success-button btn btn-info" (click) = "gotohome()"> Go to home </button>
     </div>
     <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Designed By Team🙌</p>
