@@ -16,11 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
-<<<<<<< HEAD
 import { MapsComponent } from './maps/maps.component';
 import { Map1Component } from './map1/map1.component';
 import { MhomeComponent } from './mhome/mhome.component';
-=======
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component'
 import { InformationComponent } from './information/information.component';
@@ -31,7 +29,6 @@ import { Game1Component } from './game1/game1.component';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
 // import { ProfileComponent } from './profile/profile.component'
->>>>>>> d6997f0b38d782ee3c37722fadfff44b898303dc
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,11 +38,9 @@ import { Game1Component } from './game1/game1.component';
     VideosComponent,
     SigninComponent,
     HomeComponent,
-<<<<<<< HEAD
     MapsComponent,
     Map1Component,
-    MhomeComponent
-=======
+    MhomeComponent,
     PracticetogestureComponent,
     CoursepageComponent,
     InformationComponent,
@@ -55,7 +50,6 @@ import { Game1Component } from './game1/game1.component';
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
->>>>>>> d6997f0b38d782ee3c37722fadfff44b898303dc
   ],
   imports: [
     BrowserModule,
