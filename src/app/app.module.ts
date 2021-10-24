@@ -33,7 +33,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { WebinarComponent } from './webinar/webinar.component';
 import { PortalComponent } from './portal/portal.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SigngameoneComponent } from './signgameone/signgameone.component'
+import { SigngameoneComponent } from './signgameone/signgameone.component';
+import { GesturesComponent } from './gestures/gestures.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import { SigngameoneComponent } from './signgameone/signgameone.component'
 
     PortalComponent,
     ProfileComponent,
-    SigngameoneComponent
+    SigngameoneComponent,
+    GesturesComponent
   ],
   imports: [
     BrowserModule,
