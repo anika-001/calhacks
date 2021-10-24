@@ -14,10 +14,10 @@ export class SigninComponent implements OnInit {
 
   constructor(private as: AuthService, private router: Router) { }
 
-  
+
   login: boolean = true;
   error: any;
-errormessage:any;
+  errormessage: any;
   selectedrole: any;
   signindata: any;
   signupdata: any;
@@ -27,12 +27,12 @@ errormessage:any;
   }
 
   submit() {
-    if(this.login){
+    if (this.login) {
       this.as.login(this.formlogin.value).then(res => {
         this.router.navigate(['/home']);
       })
     }
-    else{
+    else {
       this.formreg.get("role")?.setValue(this.signupdata[5].value);
       this.as.signup(this.formreg.value).then(res => {
         this.router.navigate(['/home']);
@@ -53,7 +53,7 @@ errormessage:any;
     role: new FormControl('user'),
     confirmpassword: new FormControl(''),
   })
-  
+
   ngOnInit(): void {
     this.signindata = logindata;
     this.signupdata = regdata;

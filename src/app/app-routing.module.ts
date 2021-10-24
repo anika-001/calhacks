@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { VideosComponent } from './videos/videos.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component';
+import { SigngameoneComponent } from './signgameone/signgameone.component';
 
 const routes: Routes = [
   // {
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'signgameone',
+    component: SigngameoneComponent
   }
 ];
 
