@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { VideosComponent } from './videos/videos.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component';
+import { Signstranslatorgame2Component } from './signstranslatorgame2/signstranslatorgame2.component';
 
 const routes: Routes = [
   // {
@@ -45,6 +46,8 @@ const routes: Routes = [
   {
     path: 'practicetogesture',
     component: PracticetogestureComponent
+  },
+  {
     path: 'info',
     component: InformationComponent
   },
@@ -59,6 +62,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'signgame2',
+    component: Signstranslatorgame2Component
   }
 ];
 

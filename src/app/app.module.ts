@@ -20,6 +20,7 @@ import { PracticetogestureComponent } from './practicetogesture/practicetogestur
 import { CoursepageComponent } from './coursepage/coursepage.component'
 import { InformationComponent } from './information/information.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Signstranslatorgame2Component } from './signstranslatorgame2/signstranslatorgame2.component';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
 // import { ProfileComponent } from './profile/profile.component'
@@ -34,7 +35,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     PracticetogestureComponent,
     CoursepageComponent,
-    InformationComponent
+    InformationComponent,
+    Signstranslatorgame2Component
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
@@ -52,11 +54,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AngularFirestoreModule,
     MatSelectModule,
     NoopAnimationsModule,
-<<<<<<< HEAD
-    WebcamModule
-=======
     NgbModule
->>>>>>> 4a9a62ab3a81767e631bb8480f317bafdaf1e3aa
+    // WebcamModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
