@@ -16,16 +16,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
-import { MapsComponent } from './maps/maps.component';
-import { Map1Component } from './map1/map1.component';
+// import { MapsComponent } from './maps/maps.component';
+// import { Map1Component } from './map1/map1.component';
 import { MhomeComponent } from './mhome/mhome.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component'
 import { InformationComponent } from './information/information.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ManasthitihomeComponent } from './manasthitihome/manasthitihome.component';
+import { Signstranslatorgame2Component } from './signstranslatorgame2/signstranslatorgame2.component';
 import { ManasthitinavbarComponent } from './manasthitinavbar/manasthitinavbar.component';
-import { Game1Component } from './game1/game1.component';
+import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.component';
+import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
@@ -35,6 +36,7 @@ import { PortalComponent } from './portal/portal.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
 import { GesturesComponent } from './gestures/gestures.component'
+import { ShomeComponent } from './shome/shome.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,15 +46,16 @@ import { GesturesComponent } from './gestures/gestures.component'
     VideosComponent,
     SigninComponent,
     HomeComponent,
-    MapsComponent,
-    Map1Component,
+    // MapsComponent,
+    // Map1Component,
     MhomeComponent,
     PracticetogestureComponent,
     CoursepageComponent,
     InformationComponent,
-    ManasthitihomeComponent,
+    Signstranslatorgame2Component,
     ManasthitinavbarComponent,
-    Game1Component,
+    Manasthitigame1Component,
+    Manasthitigame2Component,
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
@@ -60,7 +63,8 @@ import { GesturesComponent } from './gestures/gestures.component'
     PortalComponent,
     ProfileComponent,
     SigngameoneComponent,
-    GesturesComponent
+    GesturesComponent,
+    ShomeComponent
   ],
   imports: [
     BrowserModule,
