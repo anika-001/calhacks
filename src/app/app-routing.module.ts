@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { VideosComponent } from './videos/videos.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component';
+import { Game1Component } from './game1/game1.component';
 
 const routes: Routes = [
   // {
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'mentally/jeopardy',
+    component: Game1Component
   }
 ];
 
