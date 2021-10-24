@@ -51,7 +51,7 @@ import { SigngameoneComponent } from './signgameone/signgameone.component'
     InformationComponent,
     ManasthitihomeComponent,
     ManasthitinavbarComponent,
-    Game1Component
+    Game1Component,
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
