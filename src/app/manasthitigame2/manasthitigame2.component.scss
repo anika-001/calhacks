@@ -1,10 +1,22 @@
+.main{
+  height:100%;
+  width:100vw;
+  background: rgba(74, 144, 226, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.6);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 .bt-container{
+ 
     display:inline-block;
     position:relative;
     background-image: url("../../assets/images/anatomy.png");
     height: 80vh;
     width: 30vw;
     background-size: 100% 100%;
+    
     }
   
   .bt-container img {
@@ -48,7 +60,7 @@
     margin-left: 95%;
     background-color: #0492c2;
     border: none;
-    color: white;
+    // color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

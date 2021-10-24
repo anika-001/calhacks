@@ -16,6 +16,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { VideosComponent } from './videos/videos.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component';
+import { Signstranslatorgame2Component } from './signstranslatorgame2/signstranslatorgame2.component';
+// import { Game1Component } from './game1/game1.component';
 import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.component';
 import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
@@ -85,6 +87,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'signgame2',
+    component: Signstranslatorgame2Component
   },
   {
     path: 'signgameone',

@@ -23,6 +23,7 @@ import { PracticetogestureComponent } from './practicetogesture/practicetogestur
 import { CoursepageComponent } from './coursepage/coursepage.component'
 import { InformationComponent } from './information/information.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Signstranslatorgame2Component } from './signstranslatorgame2/signstranslatorgame2.component';
 import { ManasthitinavbarComponent } from './manasthitinavbar/manasthitinavbar.component';
 import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.component';
 import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
@@ -34,6 +35,7 @@ import { WebinarComponent } from './webinar/webinar.component';
 import { PortalComponent } from './portal/portal.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
+import { GesturesComponent } from './gestures/gestures.component'
 import { ShomeComponent } from './shome/shome.component'
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import { ShomeComponent } from './shome/shome.component'
     PracticetogestureComponent,
     CoursepageComponent,
     InformationComponent,
+    Signstranslatorgame2Component,
     ManasthitinavbarComponent,
     Manasthitigame1Component,
     Manasthitigame2Component,
@@ -60,6 +63,7 @@ import { ShomeComponent } from './shome/shome.component'
     PortalComponent,
     ProfileComponent,
     SigngameoneComponent,
+    GesturesComponent,
     ShomeComponent
   ],
   imports: [
