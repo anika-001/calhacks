@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {WebcamModule} from 'ngx-webcam';
+import { WebcamModule } from 'ngx-webcam';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -16,6 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+// import { MapsComponent } from './maps/maps.component';
+// import { Map1Component } from './map1/map1.component';
+import { MhomeComponent } from './mhome/mhome.component';
 import { PracticetogestureComponent } from './practicetogesture/practicetogesture.component';
 import { CoursepageComponent } from './coursepage/coursepage.component'
 import { InformationComponent } from './information/information.component';
@@ -24,9 +27,14 @@ import { ManasthitihomeComponent } from './manasthitihome/manasthitihome.compone
 import { ManasthitinavbarComponent } from './manasthitinavbar/manasthitinavbar.component';
 import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.component';
 import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 // import { WebinarComponent } from './webinar/webinar.component';
 // import { PortalComponent } from './portal/portal.component';
 // import { ProfileComponent } from './profile/profile.component'
+import { WebinarComponent } from './webinar/webinar.component';
+import { PortalComponent } from './portal/portal.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SigngameoneComponent } from './signgameone/signgameone.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,16 +44,23 @@ import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.comp
     VideosComponent,
     SigninComponent,
     HomeComponent,
+    // MapsComponent,
+    // Map1Component,
+    MhomeComponent,
     PracticetogestureComponent,
     CoursepageComponent,
     InformationComponent,
     ManasthitihomeComponent,
     ManasthitinavbarComponent,
     Manasthitigame1Component,
-    Manasthitigame2Component
+    Manasthitigame2Component,
     // WebinarComponent,
     // PortalComponent,
     // ProfileComponent
+
+    PortalComponent,
+    ProfileComponent,
+    SigngameoneComponent
   ],
   imports: [
     BrowserModule,
