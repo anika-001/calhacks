@@ -45,6 +45,8 @@ const routes: Routes = [
   {
     path: 'practicetogesture',
     component: PracticetogestureComponent
+  },
+  {
     path: 'info',
     component: InformationComponent
   },

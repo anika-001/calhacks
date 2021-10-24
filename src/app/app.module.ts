@@ -52,11 +52,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AngularFirestoreModule,
     MatSelectModule,
     NoopAnimationsModule,
-<<<<<<< HEAD
-    WebcamModule
-=======
+    // WebcamModule,
     NgbModule
->>>>>>> 4a9a62ab3a81767e631bb8480f317bafdaf1e3aa
   ],
   providers: [],
   bootstrap: [AppComponent]
