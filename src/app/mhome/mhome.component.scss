@@ -33,6 +33,7 @@
     background-color: white;
 }
 .whatwedoimg {
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100vh;
     color: white;
     background-image: url("../../assets/images/white.jpg");
@@ -58,7 +59,7 @@
 }
 
 .infosec {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-color: white;
     // padding: 2%;
@@ -100,7 +101,7 @@
 .name2{
     font-family: country;
     color: black;
-    font-size: 300%;
+    font-size: 250%;
     align-items: center;
     text-align: center;
     // width: 100%;
@@ -109,9 +110,10 @@
 }
 
 .info{
+    
     font-family: country;
     color: black;
-    font-size: 200%;
+    font-size: 170%;
     padding: 5%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -202,15 +204,15 @@
   }
   
 .btn-4 {
-    background-color: rgb(40, 103, 178);
-  background-image: linear-gradient(315deg, rgb(40, 103, 178) 0%, rgb(115, 166, 230) 74%);
+    background-color: #116466;
+  background-image: linear-gradient(315deg, #116466 0%, #62b8b9 74%);
     line-height: 42px;
     padding: 2vh;
     border: none;
   }
   .btn-4:hover{
     // background-color: #89d8d3;
-    background-image: linear-gradient(315deg, rgb(115, 166, 230) 0%, rgb(40, 103, 178) 74%);
+    background-image: linear-gradient(315deg, #62b8b9 0%, #116466 74%);
   }
   .btn-4 span {
     position: relative;
