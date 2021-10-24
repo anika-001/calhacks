@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-signgameone',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigngameoneComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db: AngularFirestore) { }
+
+  questionnumber: any = 0;
+  questions: any;
 
   ngOnInit(): void {
   }
+
+  getquestions(){
+
+  }
+
 
 }

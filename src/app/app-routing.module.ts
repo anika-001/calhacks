@@ -21,6 +21,7 @@ import { Signstranslatorgame2Component } from './signstranslatorgame2/signstrans
 import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.component';
 import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
+import { ShomeComponent } from './shome/shome.component';
 
 const routes: Routes = [
   // {
@@ -58,6 +59,10 @@ const routes: Routes = [
   {
     path: 'mhome',
     component: MhomeComponent
+  }, 
+  {
+    path: 'shome',
+    component: ShomeComponent
   }, 
   {
     path: 'coursepage',
