@@ -36,7 +36,9 @@ import { PortalComponent } from './portal/portal.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
 import { GesturesComponent } from './gestures/gestures.component'
-import { ShomeComponent } from './shome/shome.component'
+import { ShomeComponent } from './shome/shome.component';
+import { MactivitiesComponent } from './mactivities/mactivities.component';
+import { SactivitiesComponent } from './sactivities/sactivities.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +66,9 @@ import { ShomeComponent } from './shome/shome.component'
     ProfileComponent,
     SigngameoneComponent,
     GesturesComponent,
-    ShomeComponent
+    ShomeComponent,
+    MactivitiesComponent,
+    SactivitiesComponent
   ],
   imports: [
     BrowserModule,

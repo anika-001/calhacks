@@ -22,6 +22,7 @@ import { Manasthitigame1Component } from './manasthitigame1/manasthitigame1.comp
 import { Manasthitigame2Component } from './manasthitigame2/manasthitigame2.component';
 import { SigngameoneComponent } from './signgameone/signgameone.component';
 import { ShomeComponent } from './shome/shome.component';
+import { MactivitiesComponent } from './mactivities/mactivities.component';
 
 const routes: Routes = [
   // {
@@ -104,6 +105,10 @@ const routes: Routes = [
   {
     path: 'mentally/anatomy',
     component: Manasthitigame2Component
+  },
+  {
+    path: 'mentally/activities',
+    component: MactivitiesComponent
   }
 ];
 
