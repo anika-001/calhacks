@@ -1,28 +1,30 @@
 <div class="main">
-
     <div class="container">
         <div class="container-portal">
             <div>
                 <h3 class="topic2">Guess the sign of the word?</h3>
             </div>
-
         </div>
-        <div class="inputfield" style="color: white;font-size: 20px;font-family: cursive;">Question 1:
-            Animal</div>
+        <div class = "scoreandquestions">
+            <div class = "cell">Question {{questionnumber}} of 5</div>
+            <div class = "cell">Score: {{score}}</div>
+        </div>
+        <div class="inputfield" style="color: white;font-size: 20px;font-family: cursive;">{{questions[questionnumber - 1].payload.doc.data().Question}}</div>
     </div>
 
 
     <div>
         <ul class="cards">
-            <li>
-                <a href="" class="card">
-                    <img src="../../assets/images/a.png" class="card__image" alt="" />
+            <li (click) = "next('o1')">
+                <div class="card" [ngClass]="{
+                    'bord': picked == 'o1'
+                }">
+                    <img src= "{{questions[questionnumber-1].payload.doc.data().o1}}" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
                             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
                                 <path />
                             </svg>
-                            <!-- <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> -->
                             <div class="card__header-text">
                                 <h3 class="card__title">A</h3>
 
@@ -30,11 +32,13 @@
                         </div>
 
                     </div>
-                </a>
+                </div>
             </li>
-            <li>
-                <a href="" class="card">
-                    <img src="../../assets/images/b.png" class="card__image" alt="" />
+            <li (click) = "next('o2')">
+                <div class="card"  [ngClass]="{
+                    'bord': picked == 'o2'
+                }">
+                    <img src= "{{questions[questionnumber-1].payload.doc.data().o2}}" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
                             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -48,11 +52,13 @@
                         </div>
 
                     </div>
-                </a>
+                </div>
             </li>
-            <li>
-                <a href="/info" class="card">
-                    <img src="../../assets/images/d.png" class="card__image" alt="" />
+            <li (click) = "next('o3')">
+                <div class="card" [ngClass]="{
+                    'bord': picked == 'o3'
+                }">
+                    <img src= "{{questions[questionnumber-1].payload.doc.data().o3}}" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
                             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -65,11 +71,13 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </li>
-            <li>
-                <a href="" class="card">
-                    <img src="../../assets/images/c.png" class="card__image" alt="" />
+            <li (click) = "next('o4')">
+                <div class="card" [ngClass]="{
+                    'bord': picked == 'o4'
+                }">
+                    <img src= "{{questions[questionnumber-1].payload.doc.data().o4}}" class="card__image" alt="" />
                     <div class="card__overlay">
                         <div class="card__header">
                             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -82,18 +90,21 @@
                         </div>
 
                     </div>
-                </a>
+                </div>
             </li>
         </ul>
     </div>
 
     <div class="success-button">
-        <button type="button" class="success-button btn btn-success">Success</button>
+        <!-- <button type="button" class="success-button btn btn-success">Success</button> -->
 
-        <button type="button" class="success-button btn btn-info"> Next </button>
+        <button type="button" class="success-button btn btn-info" (click) = "gotonext()"> Next </button>
     </div>
     <div>
         <h1 class="main"></h1>
+    </div>
+    <div *ngIf = "!gameend" class = "scoreboard">
+        Score: 100
     </div>
     <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Designed By Team🙌</p>
